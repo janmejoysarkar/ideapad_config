@@ -37,12 +37,11 @@ interval=600
 
 [separator]
 
-[volume-pipewire]
+[volume]
 label=𝅘𝅥𝅮 
-command=$HOME/.config/i3blocks/volume-pipewire/volume-pipewire
-interval=once
+command=pamixer --get-volume-human
+interval=1
 signal=1
-USE_ALSA_NAME=1
 
 [separator]
 
