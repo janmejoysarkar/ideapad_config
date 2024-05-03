@@ -13,7 +13,7 @@ alias vlc='org.videolan.VLC'
 alias vpn='netExtender --username=janmejoy.sarkar --password=J@nMeJoY#*p*2022 --domain=LocalDomain --auto-reconnect moon.iucaa.in:4433'
 alias gnome-settings='XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 alias ql='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/quick_look.py'
-alias dropbox='python3 /home/janmejoy/scripts/dropbox.py'
+alias dropbox='python3 /home/janmejoy/scripts_git/dropbox.py'
 export PS1="\[\e[38;5;216m\]\u\[\e[38;5;220m\]@\[\e[38;5;222m\]\h \[\e[38;5;229m\]\w \[\033[0m\]$ "
 export DISK="/run/media/janmejoy/data/"
 TERMINAL='/bin/kgx'
