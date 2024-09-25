@@ -65,7 +65,6 @@ command=date '+%a, %d %b'
 interval=10
 
 #[separator]
-
 [time]
 label= 
 command=date '+%H:%M:%S'
