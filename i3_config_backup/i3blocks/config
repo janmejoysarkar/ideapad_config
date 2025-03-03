@@ -50,7 +50,7 @@ command=$HOME/.config/i3blocks/custom/batteryCmode_check.sh
 interval=30
 
 [battery2]
-command=$HOME/.config/i3blocks/battery/battery
+command= acpi | grep -i "Battery 0" | cut -d ":" -f2 | cut -d "," -f 1,2
 interval=30
 
 [pstate]

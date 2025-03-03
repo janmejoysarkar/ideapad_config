@@ -1,9 +1,9 @@
-#
 # ~/.bashrc
 #
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+mkcd() { mkdir -p "$1" && cd "$1"; }
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -11,11 +11,15 @@ alias vi='vim'
 alias playonlinux='com.playonlinux.PlayOnLinux4'
 alias vlc='org.videolan.VLC'
 alias vpn='netExtender --username=janmejoy.sarkar --password=J@nMeJoY#*p*2022 --domain=LocalDomain --auto-reconnect moon.iucaa.in:4433'
-alias gnome-settings='XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 alias ql='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/quick_look.py'
-alias dropbox='python3 /home/janmejoy/scripts_git/dropbox.py'
-export PS1="\[\e[38;5;216m\]\u\[\e[38;5;220m\]@\[\e[38;5;222m\]\h \[\e[38;5;229m\]\w \[\033[0m\]$ "
-export DISK="/run/media/janmejoy/data/"
+alias dropbox='python3 $HOME/dropbox.py'
+alias ql='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/quick_look.py'
+alias qlt='python3 $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/quick_look_tile.py'
+alias token='cat $HOME/Dropbox/Janmejoy_SUIT_Dropbox/scripts/github_token.txt'
+alias speed='echo "Speed (eg. 1GHz): "; read SPEED; sudo cpupower frequency-set --max $SPEED'
+export PS1="\[\033[38;5;214m\]λ\[\e[00;220m\] \[\e[38;5;223m\]\w\[\033[0m\] \n ❯ "
+#export PS1="\[\e[38;5;216m\]\u\[\e[38;5;220m\]@\[\e[38;5;222m\]\h \[\e[38;5;229m\]\w \[\033[0m\]$ "
+
 TERMINAL='/bin/kgx'
 
 # >>> conda initialize >>>
