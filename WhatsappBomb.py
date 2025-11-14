@@ -26,7 +26,7 @@ def dlt():
 
 i=0
 while i<20:
-    wish('Happy New Year!')
-    dlt()
+    wish('I!')
+    #dlt()
     time.sleep(0.5)
     i=i+1
